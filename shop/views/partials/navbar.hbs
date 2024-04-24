@@ -1,0 +1,27 @@
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Coursos App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Sass</a></li>
+        {{else}}
+
+ <li><a href="/">Sass</a></li>
+{{/if}}
+
+
+{{#if isCourses}}
+        <li class="active"><a href="/courses">Components</a></li>
+        {{else}}
+        <li><a href="/courses">Components</a></li>
+        {{/if}}
+
+        {{#if isAdd}}
+        <li class="active"><a href="/add">JavaScript</a></li>
+        {{else}}
+        <li><a href="/add">JavaScript</a></li>
+    {{/if}}
+      </ul>
+    </div>
+  </nav>
+        
